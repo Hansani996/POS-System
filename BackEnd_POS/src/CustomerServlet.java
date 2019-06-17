@@ -3,6 +3,7 @@ import javax.json.Json;
 import javax.json.JsonArrayBuilder;
 import javax.json.JsonObject;
 import javax.json.JsonReader;
+import javax.json.stream.JsonParsingException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -123,4 +124,49 @@ public class CustomerServlet extends HttpServlet {
     }
 
 
+    @Override
+    protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+        if (req.getParameter("id") != null){
+
+            try {
+                JsonReader reader = Json.createReader(req.getReader());
+                JsonObject customer = reader.readObject();
+
+                String id = customer.getString("id");
+                String name = customer.getString("name");
+                String address = customer.getString("address");
+
+                if (!id.equals(req.getParameter("id"))){
+                    resp.sendError(HttpServletResponse.SC_BAD_REQUEST);
+                    return;
+                }
+//
+//                Class.forName("com.mysql.jdbc.Driver");
+                Connection connection = ds.getConnection();
+                PreparedStatement pstm = connection.prepareStatement("UPDATE customer SET name=?, address=? WHERE id=?");
+                pstm.setObject(3,id);
+                pstm.setObject(1,name);
+                pstm.setObject(2,address);
+                int affectedRows = pstm.executeUpdate();
+
+                if (affectedRows > 0){
+                    resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
+                }else{
+                    resp.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+                }
+
+            }catch (JsonParsingException | NullPointerException  ex){
+                resp.sendError(HttpServletResponse.SC_BAD_REQUEST);
+            }catch (Exception ex){
+                resp.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+            }
+
+
+        }else{
+            resp.sendError(HttpServletResponse.SC_BAD_REQUEST);
+        }
+    }
+
 }
+
