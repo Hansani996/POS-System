@@ -59,7 +59,7 @@ public class CustomerServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        System.out.println("working");
         JsonReader reader = Json.createReader(req.getReader());
         resp.setContentType("application/json");
         PrintWriter out=resp.getWriter();
@@ -67,6 +67,7 @@ public class CustomerServlet extends HttpServlet {
 
         try {
             JsonObject customer =reader.readObject();
+            System.out.println(customer);
             String id=customer.getString("id");
             String  name =customer.getString("name");
             String address=customer.getString("address");
