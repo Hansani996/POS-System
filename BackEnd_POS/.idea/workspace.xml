@@ -43,8 +43,8 @@
       <file leaf-file-name="manage-customer.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../frontEndPOS/src/app/view/manage-customer/manage-customer.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-374">
-              <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+            <state relative-caret-position="-255">
+              <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
               <folding>
                 <element signature="n#style#0;n#input#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
               </folding>
@@ -55,8 +55,8 @@
       <file leaf-file-name="manage-item.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../frontEndPOS/src/app/view/manage-item/manage-item.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="40" column="106" selection-start-line="40" selection-start-column="106" selection-end-line="40" selection-end-column="106" />
+            <state relative-caret-position="156">
+              <caret line="40" column="111" lean-forward="true" selection-start-line="40" selection-start-column="111" selection-end-line="40" selection-end-column="111" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
@@ -65,11 +65,23 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="manage-item.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../frontEndPOS/src/app/view/manage-item/manage-item.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="62" column="22" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="item.service.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../frontEndPOS/src/app/service/item.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+            <state relative-caret-position="257">
+              <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -77,26 +89,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manage-item.component.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../frontEndPOS/src/app/view/manage-item/manage-item.component.ts">
+      <file leaf-file-name="CustomerServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CustomerServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="30" column="110" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="110" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manage-customer.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../frontEndPOS/src/app/view/manage-customer/manage-customer.component.ts">
+      <file leaf-file-name="ItemServlet.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ItemServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-170">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-704">
+              <caret line="59" column="65" lean-forward="true" selection-start-line="59" selection-start-column="65" selection-end-line="59" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -135,13 +141,13 @@
         <option value="$PROJECT_DIR$/../frontEndPOS/src/environments/environment.ts" />
         <option value="$PROJECT_DIR$/src/CorsFilter.java" />
         <option value="$PROJECT_DIR$/src/CustomerServlet.java" />
-        <option value="$PROJECT_DIR$/../frontEndPOS/src/app/view/manage-customer/manage-customer.component.html" />
         <option value="$PROJECT_DIR$/../frontEndPOS/src/app/view/manage-customer/manage-customer.component.ts" />
         <option value="$PROJECT_DIR$/../frontEndPOS/src/app/service/customer-service.service.ts" />
-        <option value="$PROJECT_DIR$/src/ItemServlet.java" />
-        <option value="$PROJECT_DIR$/../frontEndPOS/src/app/service/item.service.ts" />
+        <option value="$PROJECT_DIR$/../frontEndPOS/src/app/view/manage-customer/manage-customer.component.html" />
         <option value="$PROJECT_DIR$/../frontEndPOS/src/app/view/manage-item/manage-item.component.html" />
         <option value="$PROJECT_DIR$/../frontEndPOS/src/app/view/manage-item/manage-item.component.ts" />
+        <option value="$PROJECT_DIR$/../frontEndPOS/src/app/service/item.service.ts" />
+        <option value="$PROJECT_DIR$/src/ItemServlet.java" />
       </list>
     </option>
   </component>
@@ -167,9 +173,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="759" />
+    <option name="x" value="705" />
     <option name="y" value="2" />
-    <option name="width" value="592" />
+    <option name="width" value="646" />
     <option name="height" value="775" />
   </component>
   <component name="ProjectView">
@@ -178,9 +184,20 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
+            <path>
+              <item name="BackEnd_POS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BackEnd_POS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BackEnd_POS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BackEnd_POS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
             <path>
               <item name="BackEnd_POS" type="b2602c69:ProjectViewProjectNode" />
               <item name="frontEndPOS" type="462c0819:PsiDirectoryNode" />
@@ -216,22 +233,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="manage-customer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BackEnd_POS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="frontEndPOS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
               <item name="manage-item" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -399,12 +406,13 @@
       <workItem from="1560936685494" duration="4514000" />
       <workItem from="1560954023444" duration="3979000" />
       <workItem from="1560999587332" duration="8333000" />
-      <workItem from="1561009045759" duration="5256000" />
+      <workItem from="1561009045759" duration="10728000" />
+      <workItem from="1561021282174" duration="3198000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89305000" />
+    <option name="totallyTimeSpent" value="97975000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -430,9 +438,9 @@
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.89334345" visible="true" weight="0.41993463" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4977307" weight="0.37254903" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22239032" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.89334345" visible="true" weight="0.15359478" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4977307" weight="0.24673203" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.204236" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
@@ -767,13 +775,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../frontEndPOS/src/app/dto/customer.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="73" selection-start-line="1" selection-start-column="73" selection-end-line="1" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/common.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
@@ -807,29 +808,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CorsFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="187">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CustomerServlet.java">
+    <entry file="file://$PROJECT_DIR$/../frontEndPOS/src/app/dto/customer.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-988">
-          <caret line="39" column="25" lean-forward="true" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+        <state relative-caret-position="17">
+          <caret line="1" column="73" selection-start-line="1" selection-start-column="73" selection-end-line="1" selection-end-column="73" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ItemServlet.java">
+    <entry file="file://$PROJECT_DIR$/../frontEndPOS/src/app/service/customer-service.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2550">
-          <caret line="174" column="10" lean-forward="true" selection-start-line="174" selection-start-column="10" selection-end-line="174" selection-end-column="10" />
+        <state relative-caret-position="266">
+          <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../frontEndPOS/src/app/view/manage-customer/manage-customer.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="299">
+          <caret line="63" column="32" lean-forward="true" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
@@ -838,28 +842,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../frontEndPOS/src/app/view/manage-customer/manage-customer.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-374">
-          <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+        <state relative-caret-position="-255">
+          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
           <folding>
             <element signature="n#style#0;n#input#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../frontEndPOS/src/app/service/customer-service.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../frontEndPOS/src/app/view/manage-item/manage-item.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="40" column="106" selection-start-line="40" selection-start-column="106" selection-end-line="40" selection-end-column="106" />
+        <state relative-caret-position="156">
+          <caret line="40" column="111" lean-forward="true" selection-start-line="40" selection-start-column="111" selection-end-line="40" selection-end-column="111" />
           <folding>
             <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
@@ -867,23 +861,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../frontEndPOS/src/app/view/manage-item/manage-item.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="62" column="22" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../frontEndPOS/src/app/service/item.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+        <state relative-caret-position="257">
+          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../frontEndPOS/src/app/view/manage-item/manage-item.component.ts">
+    <entry file="file://$PROJECT_DIR$/src/CustomerServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="30" column="110" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ItemServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-704">
+          <caret line="59" column="65" lean-forward="true" selection-start-line="59" selection-start-column="65" selection-end-line="59" selection-end-column="65" />
         </state>
       </provider>
     </entry>

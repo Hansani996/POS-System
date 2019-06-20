@@ -1,8 +1,5 @@
 import javax.annotation.Resource;
-import javax.json.Json;
-import javax.json.JsonArrayBuilder;
-import javax.json.JsonObject;
-import javax.json.JsonReader;
+import javax.json.*;
 import javax.json.stream.JsonParsingException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -22,39 +19,82 @@ public class CustomerServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        try (PrintWriter out = resp.getWriter()) {
+        try (PrintWriter pw = resp.getWriter()) {
 
-            resp.setContentType("application/json");
+            if (req.getParameter("id") != null) {
 
-            try {
-                Connection connection = ds.getConnection();
+                String id = req.getParameter("id");
 
-                Statement stm = connection.createStatement();
-                ResultSet rst = stm.executeQuery("SELECT * FROM Customer");
+                try {
 
-                JsonArrayBuilder customers = Json.createArrayBuilder();
+                    Connection connection = ds.getConnection();
+                    PreparedStatement pstm = connection.prepareStatement("SELECT * FROM Customer WHERE id=?");
+                    pstm.setObject(1, id);
+                    ResultSet rst = pstm.executeQuery();
 
-                while (rst.next()){
-                    String id = rst.getString("id");
-                    String name = rst.getString("name");
-                    String address = rst.getString("address");
+                    if (rst.next()) {
+                        JsonObjectBuilder ob = Json.createObjectBuilder();
+                        ob.add("id", rst.getString(1));
+                        ob.add("name", rst.getString(2));
+                        ob.add("address",rst.getString(3));
+                        System.out.println(ob);
 
-                    JsonObject customer = Json.createObjectBuilder().add("id", id)
-                            .add("name", name)
-                            .add("address", address)
-                            .build();
-                    customers.add(customer);
+                        resp.setContentType("application/json");
+                        pw.println(ob.build());
+                    } else {
+                        resp.sendError(HttpServletResponse.SC_NOT_FOUND);
+                    }
+
+                } catch (Exception ex) {
+                    ex.printStackTrace();
                 }
 
-                out.println(customers.build().toString());
-
-                connection.close();
-            } catch (Exception ex) {
-                resp.sendError(500, ex.getMessage());
-                ex.printStackTrace();
             }
 
+
+            //GET ALL CUSTOMER
+
+
+            else{
+                try (PrintWriter out = resp.getWriter()) {
+
+                    resp.setContentType("application/json");
+
+                    try {
+                        Connection connection = ds.getConnection();
+
+                        Statement stm = connection.createStatement();
+                        ResultSet rst = stm.executeQuery("SELECT * FROM Customer");
+
+                        JsonArrayBuilder customers = Json.createArrayBuilder();
+
+                        while (rst.next()){
+                            String id = rst.getString("id");
+                            String name = rst.getString("name");
+                            String address = rst.getString("address");
+
+                            JsonObject customer = Json.createObjectBuilder().add("id", id)
+                                    .add("name", name)
+                                    .add("address", address)
+                                    .build();
+                            customers.add(customer);
+                        }
+
+                        out.println(customers.build().toString());
+
+                        connection.close();
+                    } catch (Exception ex) {
+                        resp.sendError(500, ex.getMessage());
+                        ex.printStackTrace();
+                    }
+
+                }
         }
+
+
+    }
+
+
     }
 
     @Override
