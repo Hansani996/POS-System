@@ -142,6 +142,9 @@ public class ItemServlet extends HttpServlet {
             double price=Double.parseDouble(item.getString("price"));
             int qty=Integer.parseInt(item.getString("qty"));
 
+            System.out.println(code);
+            System.out.println(desc);
+
             if (!code.equals(req.getParameter("code"))){
                 resp.sendError(HttpServletResponse.SC_BAD_REQUEST);
                 return;
@@ -173,6 +176,6 @@ public class ItemServlet extends HttpServlet {
         resp.sendError(HttpServletResponse.SC_BAD_REQUEST);
     }
 
-}
+    }
 
 }

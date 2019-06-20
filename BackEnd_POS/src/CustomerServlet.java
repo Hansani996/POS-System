@@ -99,29 +99,30 @@ public class CustomerServlet extends HttpServlet {
     @Override
     protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String id = req.getParameter("id");
+        System.out.println("working...");
 
-        if (id != null) {
+        if (id != null){
 
             try {
-//                Class.forName("com.mysql.jdbc.Driver");
                 Connection connection = ds.getConnection();
-                PreparedStatement pstm = connection.prepareStatement("DELETE FROM Customer WHERE id=?");
+                PreparedStatement pstm = connection.prepareStatement("DELETE FROM customer WHERE id=?");
                 System.out.println(id);
                 pstm.setObject(1, id);
                 int affectedRows = pstm.executeUpdate();
-                if (affectedRows > 0) {
+                if (affectedRows >  0){
                     resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
-                } else {
+                }else{
                     resp.sendError(HttpServletResponse.SC_NOT_FOUND);
                 }
-            } catch (Exception ex) {
+            }catch (Exception ex){
                 resp.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
                 ex.printStackTrace();
             }
 
-        } else {
+        }else{
             resp.sendError(HttpServletResponse.SC_BAD_REQUEST);
         }
+
     }
 
 
